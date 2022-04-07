@@ -1,5 +1,5 @@
 .header {
-    margin: 0px 200px;
+    margin: 0px 300px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: row;
@@ -7,8 +7,9 @@
     flex-wrap: wrap;
 }
 
-
 .header-logo {
+    font-size: 24px;
+    color: #f9faf8;
     display: flex;
     justify-content: flex-start;
     flex: 1;
@@ -17,11 +18,6 @@
 .nav-bar {
     flex: 1;
     padding: 0px;
-}
-
-h1 {
-    font-size: 24px;
-    color: #f9faf8;
 }
 
 h2 {
@@ -59,7 +55,7 @@ ul, li {
     color: #e5e7eb;  
 }
 
-button {
+.hero-button {
     background-color: #3882f6;
     color: #f9faf8;
     font-size: larger;
@@ -70,22 +66,29 @@ button {
 }
 
 .hero-image {
-    display:flex;
-    min-width: 50%;
+    border-radius: 10px;
 }
 
 .hero {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    margin: 0px 200px;
+    margin: 0px 300px;
 
 }
 
 .hero-left {
-    max-width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.hero-right {
     display: flex;
     flex-direction: column;
+    width: max-content;
 }
 
 body {
@@ -97,13 +100,11 @@ body {
 }
 
 .info-head {
-    border-style: dashed;
-    border-color: crimson;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 .info-section {
@@ -111,19 +112,26 @@ body {
 }
 
 .cards {
-    border-style: dashed;
-    border-color: crimson;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0px 300px;
 }
 
 .card-one, .card-two, .card-three, .card-four {
-    border-style: dashed;
-    border-color: crimson;
-    text-align: center;
-    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 175px;
+}
 
+.card-img {
+    border-radius: 10px;
+}
+
+.info-text {
+    max-width: 175px;
+    text-align: center;
 }
    
 
@@ -131,16 +139,72 @@ body {
     background-color: #e5e7eb;
 }
 
+.quote-container {
+    margin: 0px 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
 .quote-text {
-    border-style: dashed;
-    border-color: crimson;
     font-style: italic;
+    font-weight: light;
     font-size: 36px;
     color: #1f2937;
     display: flex;
+    flex-direction: row;
+    min-width: 60%;
+    margin-bottom: 0%;
 }   
 
 .quote-name  {
-    border-style: dashed;
-    border-color: crimson;
+    font-weight: bolder;
+    min-width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0%;
+}   
+
+.call-to-action {
+    background-color: #3882f6;
+    color: #f9faf8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 400px;
+    border-radius: 10px;
+    padding: 40px 20px;
 }
+
+.cta-button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-color: #f9faf8;
+    border-style: solid;
+    border-width: 2px;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 8px 10px;
+    border-radius: 10px;
+    width: 125px;
+}
+
+.footer {
+    background-color: #1f2937;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #f9faf8;
+    text-align: center;
+    padding: 20px;
+}
+
